@@ -1,0 +1,6 @@
+---
+- hosts: testhost
+  user: root
+  tasks:
+    - name: playbook_test
+      shell: touch /tmp/playbook.txt
