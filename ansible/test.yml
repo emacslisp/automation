@@ -1,6 +1,8 @@
 ---
-- hosts: testhost
-  user: root
+- hosts: ec2-54-210-177-96.compute-1.amazonaws.com
+  user: ubuntu
   tasks:
     - name: playbook_test
-      shell: touch /tmp/playbook.txt
+      shell: touch /tmp/playbook123.txt
+  roles:
+    - jdk8
