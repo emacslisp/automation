@@ -1,0 +1,9 @@
+---
+- hosts: aws
+  user: ubuntu
+  tasks:    
+    - name: Ansible copy directory to the remote server
+      copy:
+        src: /Users/wudi/dev/TeamCity/buildAgent/work/9ae533451a840977/oauth2/PlayOAuth2/target/universal/playoauth2-1.0-SNAPSHOT.zip
+        dest: /home/ubuntu/playoauth2.zip
+
