@@ -1,0 +1,4 @@
+---
+- name: java | install java
+  apt: name=default-jdk state=present
+  sudo: true
